@@ -1,0 +1,374 @@
+[
+    {
+        "id": "42fe0ae9841221e3",
+        "type": "tab",
+        "label": "Flow Final",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dc20f7c409910835",
+        "type": "coap request",
+        "z": "42fe0ae9841221e3",
+        "method": "GET",
+        "confirmable": false,
+        "observe": false,
+        "multicast": false,
+        "multicastTimeout": 20000,
+        "url": "coap://172.20.10.13:5683/advance",
+        "content-format": "text/plain",
+        "raw-buffer": false,
+        "name": "advance",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "dd9ba55297ec8309"
+            ]
+        ]
+    },
+    {
+        "id": "dd9ba55297ec8309",
+        "type": "debug",
+        "z": "42fe0ae9841221e3",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "3c578ca3ca3e419c",
+        "type": "coap request",
+        "z": "42fe0ae9841221e3",
+        "method": "GET",
+        "confirmable": false,
+        "observe": false,
+        "multicast": false,
+        "multicastTimeout": 20000,
+        "url": "coap://172.20.10.13:5683/left",
+        "content-format": "text/plain",
+        "raw-buffer": false,
+        "name": "left",
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "02d25dd0ef0f1145"
+            ]
+        ]
+    },
+    {
+        "id": "02d25dd0ef0f1145",
+        "type": "debug",
+        "z": "42fe0ae9841221e3",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3a65ab3f3c937ad3",
+        "type": "coap request",
+        "z": "42fe0ae9841221e3",
+        "method": "GET",
+        "confirmable": false,
+        "observe": false,
+        "multicast": false,
+        "multicastTimeout": 20000,
+        "url": "coap://172.20.10.13:5683/right",
+        "content-format": "text/plain",
+        "raw-buffer": false,
+        "name": "right",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "5234824002e6a8a4"
+            ]
+        ]
+    },
+    {
+        "id": "5234824002e6a8a4",
+        "type": "debug",
+        "z": "42fe0ae9841221e3",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "842b336daa8ebc7d",
+        "type": "coap request",
+        "z": "42fe0ae9841221e3",
+        "method": "GET",
+        "confirmable": false,
+        "observe": false,
+        "multicast": false,
+        "multicastTimeout": 20000,
+        "url": "coap://172.20.10.13:5683/back",
+        "content-format": "text/plain",
+        "raw-buffer": false,
+        "name": "back",
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "97a68c6b006d86d5"
+            ]
+        ]
+    },
+    {
+        "id": "97a68c6b006d86d5",
+        "type": "debug",
+        "z": "42fe0ae9841221e3",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a42b4609cc5e2dbc",
+        "type": "coap request",
+        "z": "42fe0ae9841221e3",
+        "method": "GET",
+        "confirmable": false,
+        "observe": false,
+        "multicast": false,
+        "multicastTimeout": 20000,
+        "url": "coap://172.20.10.13:5683/light",
+        "content-format": "text/plain",
+        "raw-buffer": false,
+        "name": "light",
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "947f7dde14f8cae4"
+            ]
+        ]
+    },
+    {
+        "id": "947f7dde14f8cae4",
+        "type": "debug",
+        "z": "42fe0ae9841221e3",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8fc1ebb4afd5e113",
+        "type": "inject",
+        "z": "42fe0ae9841221e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "a42b4609cc5e2dbc"
+            ]
+        ]
+    },
+    {
+        "id": "1bb0a90a55605c15",
+        "type": "inject",
+        "z": "42fe0ae9841221e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "a42b4609cc5e2dbc"
+            ]
+        ]
+    },
+    {
+        "id": "daebb73e6d8a25b8",
+        "type": "inject",
+        "z": "42fe0ae9841221e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "dc20f7c409910835"
+            ]
+        ]
+    },
+    {
+        "id": "10c1f98faeab0f5b",
+        "type": "inject",
+        "z": "42fe0ae9841221e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "3c578ca3ca3e419c"
+            ]
+        ]
+    },
+    {
+        "id": "05e71b740aac06a8",
+        "type": "inject",
+        "z": "42fe0ae9841221e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "3a65ab3f3c937ad3"
+            ]
+        ]
+    },
+    {
+        "id": "bd78d72493bfb3f0",
+        "type": "inject",
+        "z": "42fe0ae9841221e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "842b336daa8ebc7d"
+            ]
+        ]
+    }
+]
