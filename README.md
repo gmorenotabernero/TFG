@@ -4,8 +4,8 @@ Este proyecto tiene por finalidad el montaje del coche OSOYOO V2.1 y su posterio
 
 ## Introducción por versiones
 
-En la primera versión se procede con el montaje del vehículo y la programación básica de los movimientos principales.
-En la segunda versión se introduce el control de los movimientos del coche mediante un mando remoto infrarrojo.
-En la versión número tres, el coche se conecta al wifi y se controla mediante una app desde el teléfono móvil.
-En la cuarta versión se introduce el protocolo CoAP y el coche será controlado desde un navegador (en Node-Red), sin necesidad de aplicación.
-En la quinta y última versión se mejorará a una interfaz más accesible (dashboard) para un control más sencillo e intuitivo.
+- En la primera versión se procede con el montaje del vehículo y la programación básica de los movimientos principales.
+- En la segunda versión se introduce el control de los movimientos del coche mediante un mando remoto infrarrojo.
+- En la versión número tres, el coche se conecta al wifi y se controla mediante una app desde el teléfono móvil.
+- En la cuarta versión se introduce el protocolo CoAP y el coche será controlado desde un navegador (en Node-Red), sin necesidad de aplicación.
+- En la quinta y última versión se mejorará a una interfaz más accesible (dashboard) para un control más sencillo e intuitivo.
